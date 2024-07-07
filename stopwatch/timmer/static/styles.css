@@ -1,0 +1,83 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Center the content on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #61dafb;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style the stopwatch container */
+#stopwatch-container {
+    text-align: center;
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #282c34;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the stopwatch display */
+#stopwatch {
+    font-size: 4em;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Style the buttons container */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Style the buttons */
+button {
+    font-size: 1.2em;
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #20232a;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Add hover effect to the buttons */
+button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+/* Add active effect to the buttons */
+button:active {
+    background-color: #0b7dda;
+    transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #stopwatch-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #stopwatch {
+        font-size: 3em;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
